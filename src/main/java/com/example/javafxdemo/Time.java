@@ -4,16 +4,18 @@ public class Time {
     private int hour;
     private int minute;
     private int second;
+    private int timeOffSet;
 
-    public Time(int hour, int minute, int second) {
+    public Time(int hour, int minute, int second, int timeOffSet) {
         this.hour = hour;
         this.minute = minute;
         this.second = second;
+        this.timeOffSet = timeOffSet;
     }
 
-    public Time(String currentTime) {
+    public Time(String currentTime,int timeOffSet) {
         String[] time = currentTime.split(":");
-        hour = Integer.parseInt(time[0]);
+        hour = Integer.parseInt(time[0])+timeOffSet;
         minute = Integer.parseInt(time[1]);
         second = Integer.parseInt(time[2]);
     }
@@ -36,5 +38,11 @@ public class Time {
                 }
             }
         }
+    }
+
+    public void addHour(){
+        hour++;
+
+
     }
 }

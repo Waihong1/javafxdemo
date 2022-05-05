@@ -13,9 +13,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
-    Time time = new Time(new CurrentTime().currentTime());
-
-
+    Time time = new Time(new CurrentTime().currentTime(), +0);
 
     @FXML
     private Text timer;

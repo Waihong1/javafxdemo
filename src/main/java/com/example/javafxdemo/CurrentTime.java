@@ -9,6 +9,9 @@ public class CurrentTime {
     LocalDateTime now = LocalDateTime.now();
 
     public CurrentTime(){
+
+
+
     }
 
     public String currentTime(){

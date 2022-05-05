@@ -1,22 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Accordion?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxdemo.SceneController">
+<AnchorPane prefHeight="250.0" prefWidth="1186.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxdemo.WorldClockController">
    <children>
-      <Button layoutX="450.0" layoutY="283.0" mnemonicParsing="false" onAction="#switchToSceneMain" prefHeight="72.0" prefWidth="99.0" text="Back">
+      <Text fx:id="timer" layoutX="657.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tijd +1" wrappingWidth="209.13671875">
+         <font>
+            <Font size="30.0" />
+         </font></Text>
+      <Accordion />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="657.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nederland" wrappingWidth="99.13671875">
          <font>
             <Font size="20.0" />
          </font>
-      </Button>
-      <Label layoutX="171.0" layoutY="46.0" prefHeight="93.0" prefWidth="221.0" text="Welcome to World Clock">
+      </Text>
+      <Text fx:id="timer2" layoutX="828.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tijd +2" wrappingWidth="151.13671875">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="timer3" layoutX="1001.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tijd +3" wrappingWidth="160.13671875">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Label layoutX="657.0" layoutY="75.0" prefHeight="57.0" prefWidth="77.0" text="Utc +1">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
+      <Label layoutX="1001.0" layoutY="75.0" prefHeight="57.0" prefWidth="77.0" text="Utc +3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="828.0" layoutY="72.0" prefHeight="64.0" prefWidth="77.0" text="Utc +2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Text layoutX="828.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Egypte" wrappingWidth="99.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="1001.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oekraïne" wrappingWidth="99.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="timer4" layoutX="469.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tijd +0" wrappingWidth="209.13671875">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Label layoutX="475.0" layoutY="75.0" prefHeight="57.0" prefWidth="77.0" text="Utc +0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Text layoutX="475.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ijsland" wrappingWidth="99.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="timer5" layoutX="309.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tijd -1" wrappingWidth="209.13671875">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="timer6" layoutX="158.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tijd -2" wrappingWidth="209.13671875">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="timer7" layoutX="14.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tijd -3" wrappingWidth="209.13671875">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Label layoutX="309.0" layoutY="75.0" prefHeight="57.0" prefWidth="77.0" text="Utc -1">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="158.0" layoutY="75.0" prefHeight="57.0" prefWidth="77.0" text="Utc -2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="75.0" prefHeight="57.0" prefWidth="77.0" text="Utc -3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Text layoutX="309.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Denemarken" wrappingWidth="116.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="151.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zuid-Georgië" wrappingWidth="123.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="22.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Groenland" wrappingWidth="99.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
